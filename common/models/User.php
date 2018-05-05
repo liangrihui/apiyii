@@ -182,7 +182,7 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     * Validates password
+     * Validates password 验证密码
      *
      * @param string $password password to validate
      * @return bool if password provided is valid for current user
@@ -194,7 +194,7 @@ class User extends ActiveRecord implements IdentityInterface
 
     /**
      * Generates password hash from password and sets it to the model
-     *
+     *从密码生成密码散列并将其设置为模型
      * @param string $password
      */
     public function setPassword($password)
@@ -203,7 +203,7 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     * Generates "remember me" authentication key
+     * Generates "remember me" authentication key 生成“记住我”身份验证密钥
      */
     public function generateAuthKey()
     {
@@ -211,7 +211,7 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     * Generates new password reset token
+     * Generates new password reset token 生成新的密码重置令牌
      */
     public function generatePasswordResetToken()
     {
@@ -219,7 +219,7 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     * Removes password reset token
+     * Removes password reset token 删除密码重置令牌
      */
     public function removePasswordResetToken()
     {
